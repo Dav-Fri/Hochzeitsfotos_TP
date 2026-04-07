@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unsere Foto-Ecke</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            width: 80%;
+            max-width: 400px;
+        }
+        h1 { margin-bottom: 1.5rem; font-size: 1.5rem; }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            transition: transform 0.2s, background 0.2s;
+        }
+        .btn-upload {
+            background-color: #0078d4; /* OneDrive Blau */
+            color: white;
+        }
+        .btn-view {
+            background-color: #ffffff;
+            color: #0078d4;
+            border: 2px solid #0078d4;
+        }
+        .btn:active { transform: scale(0.98); }
+        p { font-size: 0.9rem; color: #666; margin-top: 1rem; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>📸 Unsere Fotos</h1>
+        
+        <a href="https://1drv.ms/f/c/2d88dcea25fdfa5c/IgCDIubzxmN_S7MBy5sgmzpFAXrzrquhc_nom1HNjuzjg28?e=kjC5Ye" class="btn btn-upload">
+            Fotos hochladen
+        </a>
+
+        <a href="https://1drv.ms/f/c/2d88dcea25fdfa5c/IgCDIubzxmN_S7MBy5sgmzpFAXrzrquhc_nom1HNjuzjg28?e=kjC5Ye" class="btn btn-view">
+            Galerie ansehen
+        </a>
+
+        <p>Keine Anmeldung erforderlich!</p>
+    </div>
+
+</body>
+</html>
