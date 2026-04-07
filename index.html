@@ -11,45 +11,66 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
+            min-height: 100vh;
             margin: 0;
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            color: #333;
+            /* Pastell-Roter Farbverlauf */
+            background: linear-gradient(135deg, #fff5f5 0%, #fed7d7 100%);
+            color: #4a5568;
         }
         .container {
             text-align: center;
             background: white;
-            padding: 2rem;
-            border-radius: 20px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-            width: 80%;
-            max-width: 400px;
+            padding: 2.5rem 2rem;
+            border-radius: 24px;
+            box-shadow: 0 15px 35px rgba(229, 62, 62, 0.1);
+            width: 85%;
+            max-width: 380px;
+            /* Zentrierung im Viewport */
+            box-sizing: border-box;
         }
-        h1 { margin-bottom: 1.5rem; font-size: 1.5rem; }
+        h1 { 
+            margin-bottom: 2rem; 
+            font-size: 1.6rem; 
+            color: #c53030; /* Dunkleres Pastell-Rot */
+        }
         .btn {
             display: block;
             width: 100%;
-            padding: 15px;
-            margin: 10px 0;
+            padding: 18px;
+            margin: 12px 0;
             border: none;
-            border-radius: 12px;
+            border-radius: 15px;
             font-size: 1.1rem;
-            font-weight: bold;
+            font-weight: 600;
             cursor: pointer;
             text-decoration: none;
-            transition: transform 0.2s, background 0.2s;
+            transition: all 0.2s ease;
+            box-sizing: border-box;
         }
+        /* Haupt-Button: Pastell-Rot */
         .btn-upload {
-            background-color: #0078d4; /* OneDrive Blau */
+            background-color: #f56565;
             color: white;
+            box-shadow: 0 4px 12px rgba(245, 101, 101, 0.3);
         }
+        /* Sekundärer Button: Weiß mit rotem Rand */
         .btn-view {
             background-color: #ffffff;
-            color: #0078d4;
-            border: 2px solid #0078d4;
+            color: #f56565;
+            border: 2px solid #f56565;
         }
-        .btn:active { transform: scale(0.98); }
-        p { font-size: 0.9rem; color: #666; margin-top: 1rem; }
+        .btn:active { 
+            transform: scale(0.96); 
+        }
+        .btn:hover {
+            opacity: 0.9;
+        }
+        p { 
+            font-size: 0.85rem; 
+            color: #a0aec0; 
+            margin-top: 1.5rem; 
+            font-style: italic;
+        }
     </style>
 </head>
 <body>
@@ -61,11 +82,11 @@
             Fotos hochladen
         </a>
 
-        <a href="https://1drv.ms/f/c/2d88dcea25fdfa5c/IgCDIubzxmN_S7MBy5sgmzpFAXrzrquhc_nom1HNjuzjg28?e=kjC5Ye" class="btn btn-view">
+        <a href="https://1drv.ms/f/c/2d88dcea25fdfa5c/IgCDIubzxmN_S7MBy5sgmzpFAd53TWzu3nWexSQRcBAMHJQ?e=4cqKQq" class="btn btn-view">
             Galerie ansehen
         </a>
 
-        <p>Keine Anmeldung erforderlich!</p>
+        <p>Ganz einfach ohne Anmeldung</p>
     </div>
 
 </body>
