@@ -13,7 +13,6 @@
             justify-content: center;
             min-height: 100vh;
             margin: 0;
-            /* Pastell-Roter Farbverlauf */
             background: linear-gradient(135deg, #fff5f5 0%, #fed7d7 100%);
             color: #4a5568;
         }
@@ -25,19 +24,18 @@
             box-shadow: 0 15px 35px rgba(229, 62, 62, 0.1);
             width: 85%;
             max-width: 380px;
-            /* Zentrierung im Viewport */
             box-sizing: border-box;
         }
         h1 { 
-            margin-bottom: 2rem; 
+            margin-bottom: 1.8rem; 
             font-size: 1.6rem; 
-            color: #c53030; /* Dunkleres Pastell-Rot */
+            color: #c53030; 
         }
         .btn {
             display: block;
             width: 100%;
-            padding: 18px;
-            margin: 12px 0;
+            padding: 16px;
+            margin: 10px 0;
             border: none;
             border-radius: 15px;
             font-size: 1.1rem;
@@ -47,17 +45,32 @@
             transition: all 0.2s ease;
             box-sizing: border-box;
         }
-        /* Haupt-Button: Pastell-Rot */
+        /* Button 1: Haupt-Aktion (Upload) */
         .btn-upload {
             background-color: #f56565;
             color: white;
             box-shadow: 0 4px 12px rgba(245, 101, 101, 0.3);
         }
-        /* Sekundärer Button: Weiß mit rotem Rand */
+        /* Button 2: Galerie */
         .btn-view {
             background-color: #ffffff;
             color: #f56565;
             border: 2px solid #f56565;
+        }
+        /* Trennlinie */
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #edf2f7; /* Sehr feines Grau */
+            margin: 20px auto;
+            width: 80%;
+        }
+        /* Button 3: Zusatz-Button (Dezenter) */
+        .btn-extra {
+            background-color: #f7fafc;
+            color: #718096;
+            font-size: 0.95rem;
+            border: 1px solid #e2e8f0;
         }
         .btn:active { 
             transform: scale(0.96); 
@@ -78,12 +91,18 @@
     <div class="container">
         <h1>📸 Unsere Fotos</h1>
         
-        <a href="https://www.dropbox.com/request/D1mQgZkGjir83cZRsqzG" class="btn btn-upload">
+        <a href="HIER_DEIN_DROPBOX_DATEIANFRAGE_LINK" class="btn btn-upload">
             Fotos hochladen
         </a>
 
-        <a href="https://www.dropbox.com/scl/fo/npcfqoojgty3gn1b6y1vv/AAArjx2MRsPn3adjnryVtPU?rlkey=42otyr9vjhwb61ozk29tivqwc&st=oru50amg&dl=0" class="btn btn-view">
+        <a href="HIER_DEIN_DROPBOX_ANSCHAUEN_LINK" class="btn btn-view">
             Galerie ansehen
+        </a>
+
+        <hr>
+
+        <a href="HIER_DEIN_DRITTER_LINK" class="btn btn-extra">
+            Zusatz-Info / Programm
         </a>
 
         <p>Ganz einfach ohne Anmeldung</p>
